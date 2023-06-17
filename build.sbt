@@ -26,6 +26,12 @@ libraryDependencies ++= Seq(
   // ZIO Logging
   "dev.zio"               %% "zio-logging"      % "2.1.11",
 
+  // Odin Logger
+  "com.github.valskalla"  %% "odin-core"        % "0.13.0",
+  "com.github.valskalla"  %% "odin-json"        % "0.13.0",
+  "com.github.valskalla"  %% "odin-extras"      % "0.13.0",
+
+
   // ZIO Kafka
   "dev.zio"               %% "zio-kafka"        % "2.1.3",
 
