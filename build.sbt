@@ -4,7 +4,7 @@ ThisBuild / scalaVersion := "2.13.0"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "ZIOTemplate"
+    name := "Scala-Logger-Odin"
   )
 
 lazy val zioVersion = "2.0.13"
@@ -18,13 +18,13 @@ libraryDependencies ++= Seq(
   "dev.zio"               %% "zio-streams"      % zioVersion,
 
   // ZIO Cache
-  "dev.zio"               %% "zio-cache"        % "0.2.2",
+  "dev.zio"               %% "zio-cache"        % "0.2.3",
 
   // ZIO JSON
-  "dev.zio"               %% "zio-json"         % "0.4.2",
+  "dev.zio"               %% "zio-json"         % "0.5.0",
 
   // ZIO Logging
-  "dev.zio"               %% "zio-logging"      % "2.1.11",
+  "dev.zio"               %% "zio-logging"      % "2.1.13",
 
   // Odin Logger
   "com.github.valskalla"  %% "odin-core"        % "0.13.0",
@@ -33,7 +33,7 @@ libraryDependencies ++= Seq(
 
 
   // ZIO Kafka
-  "dev.zio"               %% "zio-kafka"        % "2.1.3",
+  "dev.zio"               %% "zio-kafka"        % "2.3.0",
 
   // Scala Test
   "org.scalactic"         %% "scalactic"        % "3.2.15",
@@ -44,5 +44,5 @@ libraryDependencies ++= Seq(
   "dev.zio"               %% "zio-test-sbt"     % zioVersion    % Test,
 
   // Weaver Test
-  "com.disneystreaming"   %% "weaver-zio"       % "0.6.15"      % Test
+  "com.disneystreaming"   %% "weaver-zio"       % "0.7.15"      % Test
 )
