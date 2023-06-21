@@ -1,5 +1,9 @@
 import io.odin.meta.{Position, Render, ToThrowable}
 
+/*
+  1. Since IO, ZIO, Task are lazily evaluated, you need to combine the log operations in either for comprehensions or flatMap/Map
+  the higher kinded return type below ->
+ */
 trait Logger[F[_]] {
 
   def trace[M](msg: => M)(implicit render: Render[M], position: Position): F[Unit]

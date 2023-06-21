@@ -31,9 +31,12 @@ libraryDependencies ++= Seq(
   "com.github.valskalla"  %% "odin-json"        % "0.13.0",
   "com.github.valskalla"  %% "odin-extras"      % "0.13.0",
 
-
   // ZIO Kafka
   "dev.zio"               %% "zio-kafka"        % "2.3.0",
+
+  // Cats
+  "org.typelevel"         %% "cats-core"        % "2.9.0",
+  "org.typelevel"         %% "cats-effect"      % "3.6-0142603",
 
   // Scala Test
   "org.scalactic"         %% "scalactic"        % "3.2.15",
