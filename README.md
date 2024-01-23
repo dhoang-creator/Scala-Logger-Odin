@@ -1,6 +1,6 @@
 <div align="center">
 
-# Scala-Logger-Odin
+# built-to-fail
 
 
 <img alt="Release date" src="https://img.shields.io/badge/release date-July 2023-red">
